@@ -1,4 +1,4 @@
-# What is
+# What is (ethtool -m)
 BASIC rasberryPi not had SFP port. but can use I2C via SFP EVB.This CLI is get SFP EEPROM infomation via rasberry PI I2C port and decode SFF-8472/SFF-8636 structure use with ethtool library.<BR>
 1. download latest ethtool
 2. expand ethtool
