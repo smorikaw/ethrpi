@@ -4,3 +4,5 @@ BASIC rasberryPi not had SFP port. but can use I2C via SFP EVB.This CLI is get S
 2. expand ethtool
 3. put this code on same directory
 4. compile with shell scripts
+<BR>
+#### https://mirrors.edge.kernel.org/pub/software/network/ethtool/
