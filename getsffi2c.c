@@ -19,16 +19,7 @@ int fd;
 //
 //  main MAIN main MAIN
 //
-int nGet_ASCII(char *EEPROM, int addr, int len, char* str){
 
-	int i,j;
-	j = 0;
-	for (i = addr; j < len; i++){
-		str[j++] = EEPROM[i];
-	}
-	str[j] = 0x00;	// len +1
-	return j;
-}
 int main(){
 	int i;
 	char EEPROM[256];
@@ -48,7 +39,7 @@ int main(){
 		EEPROM[i] = wiringPiI2CReadReg8(fd,i);
 	}
 
-	printf("ID = %02X\n", EEPROM[0]);
+	fprintf(stderr, "ID = %02X\n", EEPROM[0]);
 
 	switch(EEPROM[0]){
 	case 0x0d:	// QSFP+
